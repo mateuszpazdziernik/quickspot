@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6181EF28293B76A0009182FA /* SpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6181EF27293B76A0009182FA /* SpotTableViewController.swift */; };
+		6181EF2A293B7FF0009182FA /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6181EF29293B7FF0009182FA /* SpotCell.swift */; };
 		61D31DBA2912FF97009ECA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DB92912FF97009ECA67 /* AppDelegate.swift */; };
 		61D31DBC2912FF97009ECA67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DBB2912FF97009ECA67 /* SceneDelegate.swift */; };
 		61D31DBE2912FF97009ECA67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DBD2912FF97009ECA67 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6181EF27293B76A0009182FA /* SpotTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewController.swift; sourceTree = "<group>"; };
+		6181EF29293B7FF0009182FA /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		61D31DB62912FF97009ECA67 /* quickspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D31DB92912FF97009ECA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61D31DBB2912FF97009ECA67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				61D31DB92912FF97009ECA67 /* AppDelegate.swift */,
 				61D31DBB2912FF97009ECA67 /* SceneDelegate.swift */,
 				61D31DBD2912FF97009ECA67 /* ViewController.swift */,
+				6181EF27293B76A0009182FA /* SpotTableViewController.swift */,
+				6181EF29293B7FF0009182FA /* SpotCell.swift */,
 				61D31DBF2912FF97009ECA67 /* Main.storyboard */,
 				61D31DC22912FF9A009ECA67 /* Assets.xcassets */,
 				61D31DC42912FF9A009ECA67 /* LaunchScreen.storyboard */,
@@ -285,6 +291,8 @@
 				61D31DBE2912FF97009ECA67 /* ViewController.swift in Sources */,
 				61D31DBA2912FF97009ECA67 /* AppDelegate.swift in Sources */,
 				61D31DBC2912FF97009ECA67 /* SceneDelegate.swift in Sources */,
+				6181EF28293B76A0009182FA /* SpotTableViewController.swift in Sources */,
+				6181EF2A293B7FF0009182FA /* SpotCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
