@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61D31DBA2912FF97009ECA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DB92912FF97009ECA67 /* AppDelegate.swift */; };
+		61D31DBC2912FF97009ECA67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DBB2912FF97009ECA67 /* SceneDelegate.swift */; };
+		61D31DBE2912FF97009ECA67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DBD2912FF97009ECA67 /* ViewController.swift */; };
+		61D31DC12912FF97009ECA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D31DBF2912FF97009ECA67 /* Main.storyboard */; };
+		61D31DC32912FF9A009ECA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D31DC22912FF9A009ECA67 /* Assets.xcassets */; };
+		61D31DC62912FF9A009ECA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D31DC42912FF9A009ECA67 /* LaunchScreen.storyboard */; };
+		61D31DD12912FF9A009ECA67 /* quickspotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DD02912FF9A009ECA67 /* quickspotTests.swift */; };
+		61D31DDB2912FF9A009ECA67 /* quickspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DDA2912FF9A009ECA67 /* quickspotUITests.swift */; };
+		61D31DDD2912FF9A009ECA67 /* quickspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D31DDC2912FF9A009ECA67 /* quickspotUITestsLaunchTests.swift */; };
+		61D31DEA291301A7009ECA67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D31DE9291301A7009ECA67 /* GoogleService-Info.plist */; };
+		61D31DED2913023E009ECA67 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DEC2913023E009ECA67 /* FirebaseAnalytics */; };
+		61D31DEF2913023E009ECA67 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DEE2913023E009ECA67 /* FirebaseDatabase */; };
+		61D31DF12913023E009ECA67 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DF02913023E009ECA67 /* FirebaseDatabaseSwift */; };
+		61D31DF32913023E009ECA67 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DF22913023E009ECA67 /* FirebaseFirestore */; };
+		61D31DF52913023E009ECA67 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DF42913023E009ECA67 /* FirebaseFirestoreSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61D31DCD2912FF9A009ECA67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D31DAE2912FF97009ECA67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D31DB52912FF97009ECA67;
+			remoteInfo = quickspot;
+		};
+		61D31DD72912FF9A009ECA67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D31DAE2912FF97009ECA67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D31DB52912FF97009ECA67;
+			remoteInfo = quickspot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61D31DB62912FF97009ECA67 /* quickspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D31DB92912FF97009ECA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61D31DBB2912FF97009ECA67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61D31DBD2912FF97009ECA67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61D31DC02912FF97009ECA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61D31DC22912FF9A009ECA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61D31DC52912FF9A009ECA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61D31DC72912FF9A009ECA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D31DCC2912FF9A009ECA67 /* quickspotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickspotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D31DD02912FF9A009ECA67 /* quickspotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickspotTests.swift; sourceTree = "<group>"; };
+		61D31DD62912FF9A009ECA67 /* quickspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D31DDA2912FF9A009ECA67 /* quickspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickspotUITests.swift; sourceTree = "<group>"; };
+		61D31DDC2912FF9A009ECA67 /* quickspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61D31DE9291301A7009ECA67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61D31DB32912FF97009ECA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D31DF52913023E009ECA67 /* FirebaseFirestoreSwift in Frameworks */,
+				61D31DF12913023E009ECA67 /* FirebaseDatabaseSwift in Frameworks */,
+				61D31DF32913023E009ECA67 /* FirebaseFirestore in Frameworks */,
+				61D31DEF2913023E009ECA67 /* FirebaseDatabase in Frameworks */,
+				61D31DED2913023E009ECA67 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D31DC92912FF9A009ECA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D31DD32912FF9A009ECA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61D31DAD2912FF97009ECA67 = {
+			isa = PBXGroup;
+			children = (
+				61D31DB82912FF97009ECA67 /* quickspot */,
+				61D31DCF2912FF9A009ECA67 /* quickspotTests */,
+				61D31DD92912FF9A009ECA67 /* quickspotUITests */,
+				61D31DB72912FF97009ECA67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61D31DB72912FF97009ECA67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61D31DB62912FF97009ECA67 /* quickspot.app */,
+				61D31DCC2912FF9A009ECA67 /* quickspotTests.xctest */,
+				61D31DD62912FF9A009ECA67 /* quickspotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61D31DB82912FF97009ECA67 /* quickspot */ = {
+			isa = PBXGroup;
+			children = (
+				61D31DE9291301A7009ECA67 /* GoogleService-Info.plist */,
+				61D31DB92912FF97009ECA67 /* AppDelegate.swift */,
+				61D31DBB2912FF97009ECA67 /* SceneDelegate.swift */,
+				61D31DBD2912FF97009ECA67 /* ViewController.swift */,
+				61D31DBF2912FF97009ECA67 /* Main.storyboard */,
+				61D31DC22912FF9A009ECA67 /* Assets.xcassets */,
+				61D31DC42912FF9A009ECA67 /* LaunchScreen.storyboard */,
+				61D31DC72912FF9A009ECA67 /* Info.plist */,
+			);
+			path = quickspot;
+			sourceTree = "<group>";
+		};
+		61D31DCF2912FF9A009ECA67 /* quickspotTests */ = {
+			isa = PBXGroup;
+			children = (
+				61D31DD02912FF9A009ECA67 /* quickspotTests.swift */,
+			);
+			path = quickspotTests;
+			sourceTree = "<group>";
+		};
+		61D31DD92912FF9A009ECA67 /* quickspotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61D31DDA2912FF9A009ECA67 /* quickspotUITests.swift */,
+				61D31DDC2912FF9A009ECA67 /* quickspotUITestsLaunchTests.swift */,
+			);
+			path = quickspotUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61D31DB52912FF97009ECA67 /* quickspot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D31DE02912FF9A009ECA67 /* Build configuration list for PBXNativeTarget "quickspot" */;
+			buildPhases = (
+				61D31DB22912FF97009ECA67 /* Sources */,
+				61D31DB32912FF97009ECA67 /* Frameworks */,
+				61D31DB42912FF97009ECA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = quickspot;
+			packageProductDependencies = (
+				61D31DEC2913023E009ECA67 /* FirebaseAnalytics */,
+				61D31DEE2913023E009ECA67 /* FirebaseDatabase */,
+				61D31DF02913023E009ECA67 /* FirebaseDatabaseSwift */,
+				61D31DF22913023E009ECA67 /* FirebaseFirestore */,
+				61D31DF42913023E009ECA67 /* FirebaseFirestoreSwift */,
+			);
+			productName = quickspot;
+			productReference = 61D31DB62912FF97009ECA67 /* quickspot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61D31DCB2912FF9A009ECA67 /* quickspotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D31DE32912FF9A009ECA67 /* Build configuration list for PBXNativeTarget "quickspotTests" */;
+			buildPhases = (
+				61D31DC82912FF9A009ECA67 /* Sources */,
+				61D31DC92912FF9A009ECA67 /* Frameworks */,
+				61D31DCA2912FF9A009ECA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61D31DCE2912FF9A009ECA67 /* PBXTargetDependency */,
+			);
+			name = quickspotTests;
+			productName = quickspotTests;
+			productReference = 61D31DCC2912FF9A009ECA67 /* quickspotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61D31DD52912FF9A009ECA67 /* quickspotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D31DE62912FF9A009ECA67 /* Build configuration list for PBXNativeTarget "quickspotUITests" */;
+			buildPhases = (
+				61D31DD22912FF9A009ECA67 /* Sources */,
+				61D31DD32912FF9A009ECA67 /* Frameworks */,
+				61D31DD42912FF9A009ECA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61D31DD82912FF9A009ECA67 /* PBXTargetDependency */,
+			);
+			name = quickspotUITests;
+			productName = quickspotUITests;
+			productReference = 61D31DD62912FF9A009ECA67 /* quickspotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61D31DAE2912FF97009ECA67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					61D31DB52912FF97009ECA67 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					61D31DCB2912FF9A009ECA67 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 61D31DB52912FF97009ECA67;
+					};
+					61D31DD52912FF9A009ECA67 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 61D31DB52912FF97009ECA67;
+					};
+				};
+			};
+			buildConfigurationList = 61D31DB12912FF97009ECA67 /* Build configuration list for PBXProject "quickspot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61D31DAD2912FF97009ECA67;
+			packageReferences = (
+				61D31DEB2913023E009ECA67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 61D31DB72912FF97009ECA67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61D31DB52912FF97009ECA67 /* quickspot */,
+				61D31DCB2912FF9A009ECA67 /* quickspotTests */,
+				61D31DD52912FF9A009ECA67 /* quickspotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61D31DB42912FF97009ECA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D31DC62912FF9A009ECA67 /* LaunchScreen.storyboard in Resources */,
+				61D31DEA291301A7009ECA67 /* GoogleService-Info.plist in Resources */,
+				61D31DC32912FF9A009ECA67 /* Assets.xcassets in Resources */,
+				61D31DC12912FF97009ECA67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D31DCA2912FF9A009ECA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D31DD42912FF9A009ECA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61D31DB22912FF97009ECA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D31DBE2912FF97009ECA67 /* ViewController.swift in Sources */,
+				61D31DBA2912FF97009ECA67 /* AppDelegate.swift in Sources */,
+				61D31DBC2912FF97009ECA67 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D31DC82912FF9A009ECA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D31DD12912FF9A009ECA67 /* quickspotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D31DD22912FF9A009ECA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D31DDD2912FF9A009ECA67 /* quickspotUITestsLaunchTests.swift in Sources */,
+				61D31DDB2912FF9A009ECA67 /* quickspotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61D31DCE2912FF9A009ECA67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61D31DB52912FF97009ECA67 /* quickspot */;
+			targetProxy = 61D31DCD2912FF9A009ECA67 /* PBXContainerItemProxy */;
+		};
+		61D31DD82912FF9A009ECA67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61D31DB52912FF97009ECA67 /* quickspot */;
+			targetProxy = 61D31DD72912FF9A009ECA67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61D31DBF2912FF97009ECA67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61D31DC02912FF97009ECA67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61D31DC42912FF9A009ECA67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61D31DC52912FF9A009ECA67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61D31DDE2912FF9A009ECA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61D31DDF2912FF9A009ECA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61D31DE12912FF9A009ECA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJ4L7P9WQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quickspot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MP70169.quickspot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61D31DE22912FF9A009ECA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJ4L7P9WQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quickspot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MP70169.quickspot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61D31DE42912FF9A009ECA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJ4L7P9WQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MP70169.quickspotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickspot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/quickspot";
+			};
+			name = Debug;
+		};
+		61D31DE52912FF9A009ECA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJ4L7P9WQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MP70169.quickspotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickspot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/quickspot";
+			};
+			name = Release;
+		};
+		61D31DE72912FF9A009ECA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJ4L7P9WQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MP70169.quickspotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quickspot;
+			};
+			name = Debug;
+		};
+		61D31DE82912FF9A009ECA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJ4L7P9WQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MP70169.quickspotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quickspot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61D31DB12912FF97009ECA67 /* Build configuration list for PBXProject "quickspot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D31DDE2912FF9A009ECA67 /* Debug */,
+				61D31DDF2912FF9A009ECA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D31DE02912FF9A009ECA67 /* Build configuration list for PBXNativeTarget "quickspot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D31DE12912FF9A009ECA67 /* Debug */,
+				61D31DE22912FF9A009ECA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D31DE32912FF9A009ECA67 /* Build configuration list for PBXNativeTarget "quickspotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D31DE42912FF9A009ECA67 /* Debug */,
+				61D31DE52912FF9A009ECA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D31DE62912FF9A009ECA67 /* Build configuration list for PBXNativeTarget "quickspotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D31DE72912FF9A009ECA67 /* Debug */,
+				61D31DE82912FF9A009ECA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61D31DEB2913023E009ECA67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61D31DEC2913023E009ECA67 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61D31DEB2913023E009ECA67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		61D31DEE2913023E009ECA67 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61D31DEB2913023E009ECA67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		61D31DF02913023E009ECA67 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61D31DEB2913023E009ECA67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		61D31DF22913023E009ECA67 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61D31DEB2913023E009ECA67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		61D31DF42913023E009ECA67 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61D31DEB2913023E009ECA67 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 61D31DAE2912FF97009ECA67 /* Project object */;
+}
