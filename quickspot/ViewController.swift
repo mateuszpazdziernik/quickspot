@@ -35,7 +35,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
     }
     
-    func databaseSync() {
+    /*func databaseSync() {
         db.collection("spots").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Błąd połączenia z bazą danych: \(err)")
@@ -45,7 +45,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
         }
-    }
+    }*/
     
     func showMarksFromDatabase() {
         db.collection("spots").getDocuments() { [self] (querySnapshot, err) in
@@ -114,6 +114,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 extension ViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
+            //let userPin = mapView.view(for: annotation) as? MKPinAnnotationView ?? MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
+            //userPin.image = UIImage(systemName: "circle.fill")
+            //userPin.pinTintColor = UIColor(named: "pinGreen")
             return nil
         }
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")

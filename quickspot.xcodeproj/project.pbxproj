@@ -24,6 +24,7 @@
 		61D31DF12913023E009ECA67 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DF02913023E009ECA67 /* FirebaseDatabaseSwift */; };
 		61D31DF32913023E009ECA67 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DF22913023E009ECA67 /* FirebaseFirestore */; };
 		61D31DF52913023E009ECA67 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61D31DF42913023E009ECA67 /* FirebaseFirestoreSwift */; };
+		61D95A3029EEF30D007DE275 /* NaviSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D95A2F29EEF30D007DE275 /* NaviSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		61D31DDA2912FF9A009ECA67 /* quickspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickspotUITests.swift; sourceTree = "<group>"; };
 		61D31DDC2912FF9A009ECA67 /* quickspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		61D31DE9291301A7009ECA67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61D95A2F29EEF30D007DE275 /* NaviSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				61D31DBB2912FF97009ECA67 /* SceneDelegate.swift */,
 				61D31DBD2912FF97009ECA67 /* ViewController.swift */,
 				6181EF27293B76A0009182FA /* SpotTableViewController.swift */,
+				61D95A2F29EEF30D007DE275 /* NaviSelectionViewController.swift */,
 				61D31DBF2912FF97009ECA67 /* Main.storyboard */,
 				61D31DC22912FF9A009ECA67 /* Assets.xcassets */,
 				61D31DC42912FF9A009ECA67 /* LaunchScreen.storyboard */,
@@ -291,6 +294,7 @@
 				61D31DBE2912FF97009ECA67 /* ViewController.swift in Sources */,
 				61D31DBA2912FF97009ECA67 /* AppDelegate.swift in Sources */,
 				61214788296ADD9000C8C460 /* Spot.swift in Sources */,
+				61D95A3029EEF30D007DE275 /* NaviSelectionViewController.swift in Sources */,
 				61D31DBC2912FF97009ECA67 /* SceneDelegate.swift in Sources */,
 				6181EF28293B76A0009182FA /* SpotTableViewController.swift in Sources */,
 			);

@@ -15,10 +15,10 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     func sortMenu() -> UIMenu {
         let menuItems = UIMenu(title: "Sortowanie:", options: .displayInline, children: [
-            UIAction(title: "a-z", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 0)}),
-            UIAction(title: "z-a", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 1)}),
-            UIAction(title: "distUP", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 2)}),
-            UIAction(title: "distDOWN", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 3)}),
+            UIAction(title: "Alfabetycznie", image: UIImage(systemName: "arrow.up"), handler: {(_) in self.setSortingRule(x: 0)}),
+            UIAction(title: "Alfabetycznie", image: UIImage(systemName: "arrow.down"), handler: {(_) in self.setSortingRule(x: 1)}),
+            UIAction(title: "Odległość", image: UIImage(systemName: "arrow.up"), handler: {(_) in self.setSortingRule(x: 2)}),
+            UIAction(title: "Odległość", image: UIImage(systemName: "arrow.down"), handler: {(_) in self.setSortingRule(x: 3)}),
         ])
         return menuItems
     }
@@ -116,6 +116,20 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
         currentLocation = locValue
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let destViewController = mainStoryboard.instantiateViewController(withIdentifier: "NaviSelectionViewController") as! NaviSelectionViewController
+        
+        destViewController.street = dataArray[indexPath.row].street
+        destViewController.priceArray = dataArray[indexPath.row].price
+        destViewController.dist = Double(dataArray[indexPath.row].distance)
+        destViewController.location = dataArray[indexPath.row].location
+        destViewController.hours = dataArray[indexPath.row].hours
+        
+        print("tap")
+        self.navigationController?.pushViewController(destViewController, animated: true)
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
     }
@@ -128,23 +142,27 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
         
+        let coords = dataArray[indexPath.row].location
         let street = dataArray[indexPath.row].street
         let priceArray = dataArray[indexPath.row].price
-        let distance = Double(dataArray[indexPath.row].distance)
         let hours = dataArray[indexPath.row].hours
+        let distance = Double(dataArray[indexPath.row].distance)
+        let formattedDist:String = "\(formatter.string(for: distance/1000)!)"
         
         var content = cell.defaultContentConfiguration()
-        //content.image = UIImage(systemName: "location.magnifyingglass")
+        content.image = UIImage(systemName: "location.magnifyingglass")
 
         content.secondaryText = """
-         \(formatter.string(for: distance/1000)!) km
+         \(formattedDist) km
         
          Godziny otwarcia: \(hours)
         
-         Pierwsza godzina postoju: \(priceArray[0])
-         Druga godzina postoju:      \(priceArray[1])
-         Trzecia godzina postoju:    \(priceArray[2])
-         Kolejne godziny postoju:    \(priceArray[3])/h
+         Pierwsza godzina postoju:     \(priceArray[0])
+         Druga godzina postoju:          \(priceArray[1])
+         Trzecia godzina postoju:        \(priceArray[2])
+         Każda kolejna godzina:          \(priceArray[3])
+        
+         Przejdź do nawigacji...
         
         """
         content.text = "\n ul. \(street)"

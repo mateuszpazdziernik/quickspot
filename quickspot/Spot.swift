@@ -17,7 +17,7 @@ struct Spot: Identifiable {
     var firestoreID:String = "default_ID"
     var location:CLLocation = CLLocation(latitude: latitude, longitude: longitude)
     var hours:String = "default_hours"
-    var price:Array<Any> 
+    var price:Array<String>
     var street:String = "default_street"
     var distance:Int
     
@@ -39,7 +39,7 @@ struct Spot: Identifiable {
         distance = 0
     }
     
-    init(firestoreID: String, location: CLLocation, hours:String, price: Array<Any>, street: String, distance: Int) {
+    init(firestoreID: String, location: CLLocation, hours:String, price: Array<String>, street: String, distance: Int) {
         self.firestoreID = firestoreID
         self.location = location
         self.price = price
