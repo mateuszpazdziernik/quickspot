@@ -18,7 +18,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func didChangeSegment(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {self.overrideUserInterfaceStyle = .light}
-        else if sender.selectedSegmentIndex == 1 {self.overrideUserInterfaceStyle = .dark}
+        else if sender.selectedSegmentIndex == 1 {self.overrideUserInterfaceStyle = .unspecified}
+        else if sender.selectedSegmentIndex == 2 {self.overrideUserInterfaceStyle = .dark}
     }
     
     override func viewDidLoad() {
@@ -64,7 +65,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     
                     //annotations.title = "\(document.documentID)"
                     annotations.title = "\(priceArray[0]) - \(priceArray[2])"
-                    annotations.subtitle = "\(hours)"
+                    annotations.subtitle = "płatne w godz. \(hours)"
                     annotations.coordinate = CLLocationCoordinate2D(latitude: latitude,
                                                                     longitude: longitude)
                     mapView.addAnnotation(annotations)
@@ -123,16 +124,20 @@ extension ViewController: MKMapViewDelegate {
         if annotationView == nil {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
             annotationView?.canShowCallout = true
-            annotationView?.rightCalloutAccessoryView
+            //annotationView?.rightCalloutAccessoryView
         } else {
             annotationView?.annotation = annotation
         }
         switch annotation.title {
         case "userlocation":
-            annotationView?.image = UIImage(named:"spotPin")
+            annotationView?.image = UIImage(named:"")
         default:
             annotationView?.image = UIImage(named:"spotPin")
         }
         return annotationView
+    }
+
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        print("didSelectAnnotationTapped")
     }
 }

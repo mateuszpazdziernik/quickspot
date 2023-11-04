@@ -155,12 +155,9 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
         content.secondaryText = """
          \(formattedDist) km
         
-         Godziny otwarcia: \(hours)
-        
-         Pierwsza godzina postoju:     \(priceArray[0])
-         Druga godzina postoju:          \(priceArray[1])
-         Trzecia godzina postoju:        \(priceArray[2])
-         Każda kolejna godzina:          \(priceArray[3])
+         Pobieranie opłat: \(hours)
+         
+         Godzina parkowania od \(priceArray[0])
         
          Przejdź do nawigacji...
         

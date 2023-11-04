@@ -1,10 +1,3 @@
-//
-//  Spot.swift
-//  quickspot
-//
-//  Created by Mateusz on 08/01/2023.
-//
-
 import CoreLocation
 import Foundation
 

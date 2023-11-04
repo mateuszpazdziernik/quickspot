@@ -1,15 +1,9 @@
-//
-//  NaviSelectionViewController.swift
-//  quickspot
-//
-//  Created by Mateusz on 18/04/2023.
-//
-
 import UIKit
 import CoreLocation
 
 class NaviSelectionViewController: UIViewController{
     
+    let backItem = UIBarButtonItem()
     var location:CLLocation = CLLocation(latitude: 0, longitude: 0)
     var street:String = ""
     var dist:Double = 0
@@ -39,6 +33,8 @@ class NaviSelectionViewController: UIViewController{
     }
     
     override func viewDidLoad() {
+        navigationItem.backBarButtonItem?.title = "Powrót"
+        
         let formatter = NumberFormatter()
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
@@ -54,7 +50,7 @@ class NaviSelectionViewController: UIViewController{
         
         Dystans: \(formatter.string(for: dist/1000)!) km
         
-        Godziny otwarcia:
+        Płatne w godzinach:
         Pierwsza godzina postoju:
         Druga godzina postoju:
         Trzecia godzina postoju:
