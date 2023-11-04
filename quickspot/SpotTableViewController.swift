@@ -14,11 +14,11 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
     public var sortingRule: Int = 0
     
     func sortMenu() -> UIMenu {
-        let menuItems = UIMenu(title: "Sort by:", options: .displayInline, children: [
+        let menuItems = UIMenu(title: "Sortowanie:", options: .displayInline, children: [
             UIAction(title: "a-z", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 0)}),
             UIAction(title: "z-a", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 1)}),
             UIAction(title: "distUP", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 2)}),
-            UIAction(title: "distDOWN", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 3)})
+            UIAction(title: "distDOWN", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 3)}),
         ])
         return menuItems
     }
@@ -109,78 +109,6 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
         
         db = Firestore.firestore()
         loadData()
-        /*
-        func sortMenu() -> UIMenu {
-            let menuItems = UIMenu(title: "Sort by:", options: .displayInline, children: [
-                UIAction(title: "a-z", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 0)}),
-                UIAction(title: "z-a", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 1)}),
-                UIAction(title: "distUP", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 2)}),
-                UIAction(title: "distDOWN", image: UIImage(systemName: ""), handler: {(_) in self.setSortingRule(x: 3)})
-            ])
-            return menuItems
-        }
-        
-        func nextSortingRule() {
-            if (sortingRule<3){sortingRule+=1} else {sortingRule = 0}
-            print(sortingRule)
-            loadData()
-        }
-        func setSortingRule(x: Int) {
-            sortingRule = x
-            print(sortingRule)
-            loadData()
-        }*/
-        /*
-        func loadData() {
-            db.collection("spots").getDocuments() { (QuerySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents : \(err)")
-                }
-                else {
-                    var price:String
-                    var pinCoord:CLLocation
-                    for document in QuerySnapshot!.documents {
-                        let formatter = NumberFormatter()
-                        formatter.minimumFractionDigits = 2
-                        formatter.maximumFractionDigits = 2
-                        
-                        let documentID = document.documentID
-                        price = document.data()["price"] as! String
-                        let priceArray:Array = price.components(separatedBy: ";")
-                        let streetName = document.data()["street"] as! String
-                        let hours = document.data()["hours"] as! String
-                        
-                        let pinLatitude = (document.data()["location"] as! GeoPoint).latitude
-                        let pinLongitude = (document.data()["location"] as! GeoPoint).longitude
-                        pinCoord = CLLocation(latitude: pinLatitude, longitude: pinLongitude)
-                        
-                        let distance = self.currentLocation.distance(from:pinCoord)
-                        //self.dataArray.append(Spot(firestoreID: documentID, location: pinCoord, price: priceArray, street: streetName, distance: "\(formatter.string(for: distance/1000)!)"))
-                        self.dataArray.append(Spot(firestoreID: documentID, location: pinCoord, hours: hours, price: priceArray, street: streetName, distance: Int(distance)))
-                    }
-                    
-                    let backgroundView = UIImageView(image: UIImage(named: "background"))
-                    self.tableView.backgroundView = backgroundView
-                    
-                    switch self.sortingRule {
-                    case 0:
-                        self.dataArray = self.dataArray.sorted(by: {$1.street < $0.street})
-                        self.tableView.reloadData()
-                    case 1:
-                        self.dataArray = self.dataArray.sorted(by: {$0.street < $1.street})
-                        self.tableView.reloadData()
-                    case 2:
-                        self.dataArray = self.dataArray.sorted(by: {$0.distance < $1.distance})
-                        self.tableView.reloadData()
-                    case 3:
-                        self.dataArray = self.dataArray.sorted(by: {$1.distance < $0.distance})
-                        self.tableView.reloadData()
-                    default:
-                        print("sortingRuleERROR")
-                    }
-                }
-            }
-        }*/
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -195,6 +123,7 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "spotCell", for: indexPath)
+        
         let formatter = NumberFormatter()
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
@@ -205,20 +134,24 @@ class SpotTableViewController: UITableViewController, CLLocationManagerDelegate 
         let hours = dataArray[indexPath.row].hours
         
         var content = cell.defaultContentConfiguration()
+        //content.image = UIImage(systemName: "location.magnifyingglass")
+
         content.secondaryText = """
-        ul. \(street)
+         \(formatter.string(for: distance/1000)!) km
         
-        Godziny otwarcia: \(hours)
+         Godziny otwarcia: \(hours)
         
-        Pierwsza godzina postoju: \(priceArray[0])
-        Druga godzina postoju:      \(priceArray[1])
-        Trzecia godzina postoju:    \(priceArray[2])
-        Kolejne godziny postoju:    \(priceArray[3])/h
+         Pierwsza godzina postoju: \(priceArray[0])
+         Druga godzina postoju:      \(priceArray[1])
+         Trzecia godzina postoju:    \(priceArray[2])
+         Kolejne godziny postoju:    \(priceArray[3])/h
         
         """
-        content.text = "\nDystans: \(formatter.string(for: distance/1000)!) km"
+        content.text = "\n ul. \(street)"
         content.textProperties.color = .white
+        content.textProperties.font = UIFont.boldSystemFont(ofSize: 22.0)
         content.secondaryTextProperties.color = .white
+        content.secondaryTextProperties.font = UIFont.systemFont(ofSize: 16.0)
         cell.backgroundColor = UIColor.clear
         cell.contentConfiguration = content
         print(cell)
