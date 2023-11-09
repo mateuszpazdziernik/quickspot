@@ -4,7 +4,7 @@
 Mobile application with a map of paid parking lots in Wroclaw's city center, 
 where the user can pick their choosen parking spot and redirect to outside navigation app.
 
-Frameworks used:
+Tools and frameworks used:
 - MapKit
 - CoreLocation
 - Firebase
